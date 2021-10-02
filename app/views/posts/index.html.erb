@@ -8,14 +8,16 @@
 <div id="app">
     <% @posts.each do |post|%>
         <div class="tweetComponent">
-            <div class="avatar">
-            </div>
-            <div class="content">
-                <h5>Imdad Adelabou</h5>
-                <p><%= post.content %></p>
+            <div class="leftElement">
+                <div class="avatar">
+                </div>
+                <div class="content">
+                    <h5>Imdad Adelabou</h5>
+                    <p><%= post.content %></p>
+                </div>
             </div>
             <div class="allButton">
-                <%= link_to 'Edit', post_path(post.id), class: 'aButton' , method: :delete %>
+                <%= link_to 'Edit', edit_post_path(post.id), class: 'aButton'%>
                 <%= link_to 'Delete', post_path(post.id), class: 'aButton', method: :delete%>
             </div>
         <div>

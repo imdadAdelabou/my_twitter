@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:destroy]
+  before_action :set_post, only: [:update, :destroy]
   def index
     @posts = Post.all
   end
@@ -14,9 +14,19 @@ class PostsController < ApplicationController
       render :new
     end
   end
+  def update
+    if @post.update(post_params)
+      redirect_to posts_path, notice: "Modification successfully completed"
+    else
+      render :edit
+    end
+  end
   def destroy
     @post.destroy
     redirect_to posts_path, notice: "Post successfully deleted"
+  end
+  def edit
+    @post = Post.find(params[:id])
   end
   private
   def post_params
