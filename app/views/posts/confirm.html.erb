@@ -1,0 +1,8 @@
+<h2> Confirm the posting of these posts </h2>
+<%= form_with(model: @post, url: posts_path, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    <p> Content: <%= @post.content %></p>
+    <%= form.submit "Post"%>
+    <%= form.submit "Retour", name: 'back' %>
+<% end %>
+<%= link_to 'Back', :back %>
