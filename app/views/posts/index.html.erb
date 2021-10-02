@@ -5,3 +5,21 @@
     </div>
     <%= link_to "Publish new post", new_post_path, class: "mButton" %>
 </div>
+<div id="app">
+    <% @posts.each do |post|%>
+        <div class="tweetComponent">
+            <div class="avatar">
+            </div>
+            <div class="content">
+                <h5>Imdad Adelabou</h5>
+                <p><%= post.content %></p>
+            </div>
+            <div class="allButton">
+                <%= link_to 'Edit', post_path(post.id), class: 'aButton' , method: :delete %>
+                <%= link_to 'Delete', post_path(post.id), class: 'aButton', method: :delete%>
+            </div>
+        <div>
+        </div>
+    </div>
+    <% end %>
+</div>

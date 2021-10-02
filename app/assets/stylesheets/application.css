@@ -1,73 +1,104 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-#header {
-    display: flex;
-}
-
-body {
-    font-family: 'Montserrat';
-    margin: 0 0 0 20%;
-}
-
-#leftElement {
-    display: flex;
-    margin-right: 150px;
-}
-
-#header #leftElement img {
-    height: 70px;
-}
-
-#header #leftElement h2 {
-    font-weight: 100;
-}
-
-.mButton {
-    max-height: 50px;
-    background-color: violet;
-    text-decoration: none;
-    border-radius: 3px;
-    color: white;
-    padding: 8px;
-    text-align: center;
-    margin: 10px auto;
-    position: absolute;
-    display: flex;
-    left: 65%;
-    /* top: 50%; */
-}
-
-.cTextArea {
-    width: 50%;
-    height: 150px;
-    border-radius: 10px;
-    background-color: grey;
-    padding: 8px;
-    color: white;
-}
-
-.cSubmit {
-    width: 200px;
-    height: 60px;
-    background-color: #728FCE;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ #header {
+     display: flex;
+ }
+ 
+ body {
+     font-family: 'Montserrat';
+     margin: 0 25% 0 20%;
+ }
+ 
+ #leftElement {
+     display: flex;
+     margin-right: 150px;
+ }
+ 
+ #header #leftElement img {
+     height: 70px;
+ }
+ 
+ #header #leftElement h2 {
+     font-weight: 100;
+ }
+ 
+ .mButton {
+     max-height: 50px;
+     background-color: violet;
+     text-decoration: none;
+     border-radius: 3px;
+     color: white;
+     padding: 8px;
+     text-align: center;
+     margin: 10px auto;
+     position: absolute;
+     display: flex;
+     left: 65%;
+     /* top: 50%; */
+ }
+ 
+ .cTextArea {
+     width: 50%;
+     height: 150px;
+     border-radius: 10px;
+     background-color: grey;
+     padding: 8px;
+     color: white;
+ }
+ 
+ .cSubmit {
+     width: 200px;
+     height: 60px;
+     background-color: #728FCE;
+     cursor: pointer;
+     border: none;
+     border-radius: 10px;
+     color: white;
+     font-size: 18px;
+ }
+ 
+ #app {
+     margin-top: 70px;
+ }
+ 
+ .tweetComponent {
+     display: flex;
+     max-width: 100%;
+     /* height: 70px; */
+     background-color: #728FCE;
+     padding: 10px;
+     border-radius: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ .avatar {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background-color: red;
+     background-image: url('https://dl.img-news.com/dl/img/s3/dl/2020/12/skysports-roberto-firmino-liverpool_5209793.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ 
+ .tweetComponent h5 {
+     margin: 2px 0 0 20px;
+ }
+ 
+ .tweetComponent p {
+     margin: 5px 0 0 20px;
+ }
+ 
+ .allButton {
+     display: flex;
+     margin-left: 55%;
+ }
+ 
+ .allButton .aButton {
+     padding: 8px;
+     height: 30px;
+     background-color: chartreuse;
+     text-decoration: none;
+     color: white;
+     margin-right: 10px;
+     border-radius: 8px;
+ }
