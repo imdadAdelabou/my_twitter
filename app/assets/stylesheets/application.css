@@ -51,3 +51,23 @@ body {
     left: 65%;
     /* top: 50%; */
 }
+
+.cTextArea {
+    width: 50%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: grey;
+    padding: 8px;
+    color: white;
+}
+
+.cSubmit {
+    width: 200px;
+    height: 60px;
+    background-color: #728FCE;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
